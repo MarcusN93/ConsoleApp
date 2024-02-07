@@ -126,7 +126,7 @@ namespace ConsoleApp
             Console.Write("Postal Code: ");
             var postalCode = Console.ReadLine()!;
 
-            Console.Write("Last name: ");
+            Console.Write("City: ");
             var city = Console.ReadLine()!;
 
             Console.Write("Role Name: ");
@@ -149,7 +149,7 @@ namespace ConsoleApp
             var customers = _customerService.GetCustomers();
             foreach (var customer in customers)
             {
-                Console.WriteLine($"{customer.FirstName} - {customer.LastName} ({customer.Role.RoleName} SEK)");
+                Console.WriteLine($"{customer.FirstName} - {customer.LastName} ({customer.Role.RoleName})");
                 Console.WriteLine($"{customer.Address.StreetName}, {customer.Address.PostalCode} {customer.Address.City}");
 
             }
@@ -196,7 +196,7 @@ namespace ConsoleApp
             var customer = _customerService.GetCustomerByEmail(email);
             if (customer != null)
             {
-                _productService.DeleteProduct(customer.Id);
+                _customerService.DeleteCustomer(customer.Id);
                 Console.WriteLine("Customer was deleted");
 
             }
