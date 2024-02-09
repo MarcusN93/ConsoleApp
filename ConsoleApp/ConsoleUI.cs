@@ -40,6 +40,7 @@ namespace ConsoleApp
             {
                 Console.Clear();
                 Console.WriteLine("Product was created");
+                Console.WriteLine("\nPress any key to continue");
                 Console.ReadKey();
             }
         }
@@ -54,6 +55,7 @@ namespace ConsoleApp
                 Console.WriteLine($"{product.Title} - {product.Category.CategoryName} ({product.Price} SEK)");
                 
             }
+            Console.WriteLine("\nPress any key to continue");
             Console.ReadKey();
         }
 
@@ -80,6 +82,7 @@ namespace ConsoleApp
             {
                 Console.WriteLine("No product found");   
             }
+            Console.WriteLine("\nPress any key to continue");
             Console.ReadKey();
         }
 
@@ -101,6 +104,7 @@ namespace ConsoleApp
             {
                 Console.WriteLine("No product found");
             }
+            Console.WriteLine("\nPress any key to continue");
             Console.ReadKey();
         }
 
@@ -138,6 +142,7 @@ namespace ConsoleApp
             {
                 Console.Clear();
                 Console.WriteLine("Customer was created");
+                Console.WriteLine("\nPress any key to continue");
                 Console.ReadKey();
             }
         }
@@ -153,6 +158,7 @@ namespace ConsoleApp
                 Console.WriteLine($"{customer.Address.StreetName}, {customer.Address.PostalCode} {customer.Address.City}");
 
             }
+            Console.WriteLine("\nPress any key to continue");
             Console.ReadKey();
         }
 
@@ -184,6 +190,7 @@ namespace ConsoleApp
             {
                 Console.WriteLine("No Customer Found");
             }
+            Console.WriteLine("\nPress any key to continue");
             Console.ReadKey();
         }
 
@@ -204,6 +211,7 @@ namespace ConsoleApp
             {
                 Console.WriteLine("No Customer found");
             }
+            Console.WriteLine("\nPress any key to continue");
             Console.ReadKey();
         }
 

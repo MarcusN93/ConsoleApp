@@ -34,7 +34,7 @@ var consoleUI = builder.Services.GetRequiredService<ConsoleUI>();
 
 while (menu)
 {
-
+    Console.Clear();
     Console.WriteLine("MENU OPTIONS");
     Console.WriteLine($"{"1.",-3} Create new product");
     Console.WriteLine($"{"2.",-3} Show all products");
@@ -79,7 +79,9 @@ while (menu)
             menu = false;
             break;
         default:
+            Console.Clear();
             Console.WriteLine("\nInvalid Option Selected. Please try again");
+            Console.WriteLine("\nPress any key to continue");
             Console.ReadKey();
             break;
     }
