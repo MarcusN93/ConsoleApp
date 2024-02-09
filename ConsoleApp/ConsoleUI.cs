@@ -75,7 +75,7 @@ namespace ConsoleApp
                 product.Title = Console.ReadLine()!;
 
                 var newProduct = _productService.UpdateProduct(product);
-                Console.WriteLine($"{product.Title} - {product.Category.CategoryName} ({product.Price} SEK)");
+                Console.WriteLine($"{newProduct.Title} - {newProduct.Category.CategoryName} ({newProduct.Price} SEK)");
 
             }
             else
